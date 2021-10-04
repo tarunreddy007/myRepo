@@ -39,6 +39,7 @@
 						<targetType>${target.type}</targetType>
 						<server>${runtime.server}</server>
 						<environment>${environment}</environment>
+						<businessGroup>${businessGroup}</businessGroup>
 						<properties>
 							<key>value</key>
 						</properties>
