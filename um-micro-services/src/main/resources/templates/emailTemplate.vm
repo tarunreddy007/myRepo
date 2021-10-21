@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<iframe width="100%" height="300">
+    
+   <div>
+   <p><b>Message Id: </b> ${MessageId} </p>
+   <p><b>Error Message: </b> ${ErrorMessage} </p>
+   <p><b>Resource Id: </b> ${ResourceId} </p>
+   <p><b>Resource Name: </b> ${ResourceName} </p>
+   <p><b>CreatedUtc: </b> ${CreatedUtc} </p>
+   <p><b>Machine: </b> ${Machine} </p>
+   <p><b>Service: </b> ${Service} </p>
+   <p><b>MessageAction: </b> ${MessageAction} </p>
+   <p><b>Message Source: </b> ${MessageSource} </p>
+   
+  
+   </div>
+</iframe>
+
+</body>    
+</html>

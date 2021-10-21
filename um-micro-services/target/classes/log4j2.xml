@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!-- <Kafka name="Kafka" topic="${sys:kafkaTopic}">
+          <JSONLayout objectMessageAsJsonObject="true" />
+
+            <Property name="bootstrap.servers">${sys:kafkaBootStrapServers}</Property>
+        </Kafka> -->
+        <File name="LogToFile" fileName="logs/um-micro-services.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5p [%-7t] %F:%L - %m%n"/>
+        </Console>
+
+    </Appenders>
+    <Loggers>
+        <AsyncRoot level="INFO">
+            <!-- <AppenderRef ref="Kafka"/> -->
+            <AppenderRef ref="stdout"/>
+            <AppenderRef ref="LogToFile"/>
+        </AsyncRoot>
+        <Logger name="org.apache.kafka" level="WARN" />
+    </Loggers>
+</Configuration>
